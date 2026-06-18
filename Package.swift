@@ -5,6 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "Version",
+    platforms: [
+        .macOS("11.0"),
+        .iOS("16.2"),
+        .watchOS("10.6"),
+    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
